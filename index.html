@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="items">
+        <div class="it item one">Home</div>
+        <div class="it item two">Contact</div>
+        <div class="it item three">About</div>
+        <div class="it item four">Blog</div>
+    </div>
+    <script>
+        const items = document.querySelectorAll(".item")
+        setTimeout(()=>{
+            items.forEach(item=>{
+                item.classList.remove("it")
+        })
+        },2700)
+    </script>
+</body>
+</html>
